@@ -1,0 +1,476 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ENHA HOTEL | Booking</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="icon" href="images/logo.jpeg">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<style>
+    
+
+.booking-title{
+    text-align: center;
+    padding: 80px 20px 40px;
+}
+
+.booking-title h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    color: var(--gold);
+    margin-bottom: 15px;
+}
+
+.booking-title p{
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.8;
+    color: white;
+}
+
+
+
+.booking-container{
+    width: 90%;
+    margin: 60px auto;
+
+    display: flex;
+    gap: 40px;
+    align-items: stretch;
+}
+
+
+
+.booking-image{
+    flex: 1;
+}
+
+.booking-image img{
+    width: 100%;
+    height: 100%;
+    min-height: 750px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 2px solid var(--gold);
+}
+
+
+
+.booking-form{
+    flex: 1;
+    background: var(--dark);
+    padding: 35px;
+    border-radius: 15px;
+    border: 2px solid var(--gold);
+}
+
+
+fieldset{
+    border: 2px solid var(--gold);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+legend{
+    color: var(--gold);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+
+
+
+label{
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    color: white;
+}
+
+
+
+input,
+select,
+textarea{
+    width: 100%;
+    padding: 12px;
+
+    background: #111;
+
+    border: 1px solid var(--gold);
+
+    border-radius: 8px;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-family: 'Poppins', sans-serif;
+
+    margin-bottom: 10px;
+
+    box-sizing: border-box;
+}
+
+textarea{
+    resize: vertical;
+}
+
+
+input:focus,
+select:focus,
+textarea:focus{
+    outline: none;
+    border-color: white;
+    box-shadow: 0 0 8px rgba(212,175,55,.5);
+}
+
+
+input[type="radio"],
+input[type="checkbox"]{
+    width: auto;
+    margin-right: 8px;
+    margin-bottom: 12px;
+}
+
+
+
+.book-btn{
+    width: 100%;
+    padding: 16px;
+
+    background: var(--gold);
+
+    color: black;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    border: none;
+
+    border-radius: 30px;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.book-btn:hover{
+    background: white;
+    transform: scale(1.03);
+}
+
+
+
+@media (max-width: 900px){
+
+.booking-container{
+    flex-direction: column;
+}
+
+.booking-image img{
+    min-height: 400px;
+}
+
+.booking-title h2{
+    font-size: 36px;
+}
+
+}
+
+@media (max-width: 600px){
+
+.booking-form{
+    padding: 20px;
+}
+
+.booking-title{
+    padding: 50px 15px 30px;
+}
+
+.booking-title h2{
+    font-size: 30px;
+}
+
+fieldset{
+    padding: 15px;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+
+<header>
+
+<nav class="navbar">
+
+<h1 class="logo">ENHA HOTEL</h1>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+<li><a href="rooms.html">Rooms</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="amenities.html">Amenities</a></li>
+<li><a href="dining.html">Dining</a></li>
+<li><a href="booking.html" class="active">Booking</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="help.html">Help</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<main>
+
+
+<section class="booking-title">
+
+<h2 class="h2"> Reserve Your Luxury Stay</h2>
+
+<p class="p">
+
+Complete the form below and let ENHA HOTEL create an unforgettable experience for you.
+
+</p>
+
+</section>
+
+
+<section class="booking-container">
+
+
+
+<div class="booking-image">
+
+<img src="images/lobbyy.jpg" alt="Luxury Hotel Lobby">
+
+</div>
+
+
+
+<div class="booking-form">
+
+<form action="#">
+
+<fieldset>
+
+<legend>Guest Information</legend>
+
+<label for="name">Full Name</label>
+
+<input
+type="text"
+id="name"
+name="name"
+placeholder="Enter your full name"
+required
+minlength="3">
+
+<label for="email">Email Address</label>
+
+<input
+type="email"
+id="email"
+name="email"
+placeholder="example@email.com"
+required>
+
+<label for="password">Create Password</label>
+
+<input
+type="password"
+id="password"
+name="password"
+placeholder="Minimum 8 characters"
+required
+minlength="8">
+
+<label for="phone">Phone Number</label>
+
+<input
+type="tel"
+id="phone"
+name="phone"
+placeholder="+252 61XXXXXXX"
+pattern="[0-9+ ]{8,15}"
+required>
+
+</fieldset>
+
+<fieldset>
+
+<legend>Reservation Details</legend>
+
+<label for="room">Room Type</label>
+
+<select id="room" required>
+
+<option value="">Choose a Room</option>
+
+<option>Deluxe Room</option>
+
+<option>Executive Suite</option>
+
+<option>Family Suite</option>
+
+<option>Presidential Suite</option>
+
+</select>
+
+<label for="guests">Guests</label>
+
+<select id="guests">
+
+<option>1 Guest</option>
+
+<option>2 Guests</option>
+
+<option>3 Guests</option>
+
+<option>4 Guests</option>
+
+</select>
+
+<label for="checkin">Check-In</label>
+
+<input
+type="date"
+id="checkin"
+required>
+
+<label for="checkout">Check-Out</label>
+
+<input
+type="date"
+id="checkout"
+required>
+
+</fieldset>
+
+<fieldset>
+
+<legend>Preferences</legend>
+
+<p>Bed Preference</p>
+
+<label>
+
+<input
+type="radio"
+name="bed">
+
+King Bed
+
+</label>
+
+<label>
+
+<input
+type="radio"
+name="bed">
+
+Twin Beds
+
+</label>
+
+<br><br>
+
+<p>Extra Services</p>
+
+<label>
+
+<input type="checkbox">
+
+Airport Pickup
+
+</label>
+
+<label>
+
+<input type="checkbox">
+
+Breakfast Included
+
+</label>
+
+<label>
+
+<input type="checkbox">
+
+Spa Access
+
+</label>
+
+<label>
+
+<input type="checkbox">
+
+Laundry Service
+
+</label>
+
+<br><br>
+
+<label for="message">
+
+Special Requests
+
+</label>
+
+<textarea
+
+id="message"
+
+rows="5"
+
+placeholder="Tell us anything you'd like us to prepare before your arrival...">
+
+</textarea>
+
+</fieldset>
+
+<input
+
+type="submit"
+
+value="Book Your Stay"
+
+class="book-btn">
+
+</form>
+
+</div>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>
+
+&copy; 2026 ENHA HOTEL | Luxury • Comfort • Elegance
+
+</p>
+
+</footer>
+
+</body>
+
+</html>

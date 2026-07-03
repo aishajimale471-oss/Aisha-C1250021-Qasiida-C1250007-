@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ENHA HOTEL | Dining & Café</title>
+
+<link rel="stylesheet" href="style.css">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+<link rel="icon" href="images/logo.jpeg"> 
+<style>
+  
+
+.dining-hero{
+
+text-align:center;
+
+padding:80px 20px;
+
+}
+
+.dining-hero h2{
+
+font-family:'Playfair Display',serif;
+
+font-size:48px;
+
+color:var(--gold);
+
+margin-bottom:15px;
+
+}
+
+.dining-hero p{
+
+max-width:700px;
+
+margin:auto;
+
+line-height:1.8;
+
+}
+
+
+
+.restaurant-grid{
+
+width:90%;
+
+margin:50px auto;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+gap:30px;
+
+}
+
+.restaurant-card{
+
+background:var(--dark);
+
+border:2px solid var(--gold);
+
+border-radius:15px;
+
+overflow:hidden;
+
+transition:.4s;
+
+}
+
+.restaurant-card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 0 20px rgba(212,175,55,.5);
+
+}
+
+.restaurant-card img{
+
+width:100%;
+
+height:240px;
+
+object-fit:cover;
+
+}
+
+.restaurant-card h3{
+
+margin:20px;
+
+color:var(--gold);
+
+}
+
+.restaurant-card p{
+
+margin:0 20px 25px;
+
+line-height:1.8;
+
+}
+
+
+
+.chef{
+
+width:90%;
+
+margin:90px auto;
+
+display:flex;
+
+align-items:center;
+
+gap:40px;
+
+}
+
+.chef-image{
+
+flex:1;
+
+}
+
+.chef-image img{
+
+width:50%;
+
+border-radius:20px;
+
+}
+
+.chef-text{
+
+flex:1;
+
+}
+
+.chef-text h2{
+
+font-family:'Playfair Display',serif;
+
+color:var(--gold);
+
+margin-bottom:20px;
+
+}
+
+.chef-text p{
+
+line-height:1.8;
+
+margin-bottom:30px;
+
+}
+
+
+
+.hours{
+
+width:90%;
+
+margin:80px auto;
+
+}
+
+.hours h2{
+
+text-align:center;
+
+color:var(--gold);
+
+margin-bottom:25px;
+
+}
+
+table{
+
+width:100%;
+
+border-collapse:collapse;
+
+}
+
+caption{
+
+margin-bottom:15px;
+
+font-size:22px;
+
+color:var(--gold);
+
+font-weight:bold;
+
+}
+
+th,
+td{
+
+padding:18px;
+
+border:1px solid var(--gold);
+
+text-align:center;
+
+}
+
+thead{
+
+background:#1f1f1f;
+
+}
+
+tbody tr:nth-child(even){
+
+background:#191919;
+
+}
+
+tbody tr:hover{
+
+background:#2d2d2d;
+
+}
+
+tfoot{
+
+background:#1f1f1f;
+
+font-weight:bold;
+
+}
+
+
+
+@media(max-width:768px){
+
+.chef{
+
+flex-direction:column;
+
+}
+
+.dining-hero h2{
+
+font-size:36px;
+
+}
+
+.hours{
+
+overflow-x:auto;
+
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<nav class="navbar">
+
+<h1 class="logo">ENHA HOTEL</h1>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+<li><a href="rooms.html">Rooms</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="amenities.html">Amenities</a></li>
+<li><a href="dining.html" class="active">Dining</a></li>
+<li><a href="booking.html">Booking</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="help.html">Help</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<main>
+
+<section class="dining-hero">
+
+<h2 class="h2">Fine Dining Experience</h2>
+
+<p class="p">
+
+Enjoy world-class cuisine prepared by our talented chefs in an elegant atmosphere.
+
+</p>
+
+</section>
+
+<section class="restaurant-grid">
+
+<div class="restaurant-card">
+
+<img src="images/royalreturant.jpg" alt="Royal Restaurant">
+
+<h3>Royal Restaurant</h3>
+
+<p>
+
+International breakfast, lunch and dinner served daily.
+
+</p>
+
+</div>
+
+<div class="restaurant-card">
+
+<img src="images/goldencafe.jpg" alt="Golden Café">
+
+<h3>Golden Café</h3>
+
+<p>
+
+Premium coffee, desserts and pastries available all day.
+
+</p>
+
+</div>
+
+<div class="restaurant-card">
+
+<img src="images/skylagou.jpg" alt="Sky Lounge">
+
+<h3>Sky Lounge</h3>
+
+<p>
+
+Relax with refreshing drinks while enjoying a beautiful evening view.
+
+</p>
+
+</div>
+
+</section>
+
+<section class="chef">
+
+<div class="chef-image">
+
+<img src="images/headchef.jpg" alt="Head Chef">
+
+</div>
+
+<div class="chef-text">
+
+<h2 class="h2">Meet Our Head Chef</h2>
+
+<p>
+
+Our award-winning chef creates unforgettable dishes using fresh ingredients from around the world.
+
+</p>
+
+<a href="booking.html" class="btn">
+
+Reserve a Table
+
+</a>
+
+</div>
+
+</section>
+
+<section class="hours">
+
+<h2 >Opening Hours</h2>
+
+<table>
+
+<caption>Dining Schedule</caption>
+
+<thead>
+
+<tr>
+
+<th scope="col">Restaurant</th>
+
+<th scope="col">Opening</th>
+
+<th scope="col">Closing</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<th scope="row">Royal Restaurant</th>
+
+<td>6:30 AM</td>
+
+<td>11:00 PM</td>
+
+</tr>
+
+<tr>
+
+<th scope="row">Golden Café</th>
+
+<td>7:00 AM</td>
+
+<td>10:00 PM</td>
+
+</tr>
+
+<tr>
+
+<th scope="row">Sky Lounge</th>
+
+<td colspan="2">
+
+Open 24 Hours
+
+</td>
+
+</tr>
+
+</tbody>
+
+<tfoot>
+
+<tr>
+
+<td colspan="3">
+
+Reservations are recommended during weekends.
+
+</td>
+
+</tr>
+
+</tfoot>
+
+</table>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>
+
+&copy;2026 ENHA HOTEL | Luxury • Comfort • Elegance
+
+</p>
+
+</footer>
+
+</body>
+
+</html>

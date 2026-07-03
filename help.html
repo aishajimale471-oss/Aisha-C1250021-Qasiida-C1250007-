@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ENHA HOTEL | Help</title>
+
+    <link rel="stylesheet" href="style.css">
+
+
+  <link rel="icon" href="images/logo.jpeg">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+ <style>
+  
+
+.help-hero{
+
+text-align:center;
+padding:80px 20px;
+
+}
+
+.help-hero h2{
+
+font-family:'Playfair Display',serif;
+font-size:48px;
+color:var(--gold);
+margin-bottom:15px;
+
+}
+
+.help-hero p{
+
+max-width:700px;
+margin:auto;
+line-height:1.8;
+
+}
+
+
+.faq{
+
+width:90%;
+margin:50px auto;
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+gap:30px;
+
+}
+
+.question{
+
+background:var(--dark);
+
+padding:25px;
+
+border:2px solid var(--gold);
+
+border-radius:15px;
+
+transition:.3s;
+
+}
+
+.question:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 0 20px rgba(212,175,55,.4);
+
+}
+
+.question h3{
+
+color:var(--gold);
+
+margin-bottom:15px;
+
+}
+
+.question p{
+
+line-height:1.8;
+
+}
+
+
+.contact-help{
+
+width:85%;
+
+margin:70px auto;
+
+text-align:center;
+
+padding:40px;
+
+background:#181818;
+
+border-left:6px solid var(--gold);
+
+border-radius:15px;
+
+}
+
+.contact-help h2{
+
+color:var(--gold);
+
+font-family:'Playfair Display',serif;
+
+margin-bottom:15px;
+
+}
+
+.contact-help h3{
+
+color:var(--gold);
+
+margin-top:30px;
+
+margin-bottom:20px;
+
+}
+
+.contact-help p{
+
+margin:10px 0;
+
+line-height:1.8;
+
+}
+
+
+.social-links{
+
+display:flex;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+gap:18px;
+
+margin:30px 0;
+
+}
+
+.social-links img{
+
+width:50px;
+
+height:50px;
+
+padding:10px;
+
+background:var(--gold);
+
+border-radius:50%;
+
+transition:.3s;
+
+}
+
+.social-links img:hover{
+
+background:white;
+
+transform:scale(1.1);
+
+}
+
+
+.btn{
+
+display:inline-block;
+
+margin-top:20px;
+
+padding:15px 35px;
+
+background:var(--gold);
+
+color:black;
+
+text-decoration:none;
+
+font-weight:bold;
+
+border-radius:30px;
+
+transition:.3s;
+
+}
+
+.btn:hover{
+
+background:white;
+
+transform:scale(1.05);
+
+}
+
+
+@media(max-width:768px){
+
+.help-hero h2{
+
+font-size:36px;
+
+}
+
+.contact-help{
+
+width:95%;
+
+padding:25px;
+
+}
+
+.social-links{
+
+gap:12px;
+
+}
+
+.social-links img{
+
+width:45px;
+
+height:45px;
+
+}
+
+}
+ </style>
+</head>
+
+<body>
+
+<header>
+
+<nav class="navbar">
+
+<h1 class="logo">ENHA HOTEL</h1>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+<li><a href="rooms.html">Rooms</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="amenities.html">Amenities</a></li>
+<li><a href="dining.html">Dining</a></li>
+<li><a href="booking.html">Booking</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="help.html" class="active">Help</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<main>
+
+<section class="help-hero">
+
+<h2 class="h2">Help Center</h2>
+
+<p class="p">
+Need assistance? We are here to help you before and during your stay.
+</p>
+
+</section>
+
+<section class="faq">
+
+<article class="question">
+
+<h3>🕑 What time is check-in and check-out?</h3>
+
+<p>
+Check-in starts at <strong>2:00 PM</strong> and check-out is before <strong>12:00 PM</strong>.
+</p>
+
+</article>
+
+<article class="question">
+
+<h3>📶 Is Wi-Fi free?</h3>
+
+<p>
+Yes! Complimentary high-speed Wi-Fi is available throughout the hotel.
+</p>
+
+</article>
+
+<article class="question">
+
+<h3>🍽 Is breakfast included?</h3>
+
+<p>
+Yes. Breakfast is included with most room packages.
+</p>
+
+</article>
+
+<article class="question">
+
+<h3>🚗 Do you have parking?</h3>
+
+<p>
+Yes. Free secure parking is available for all hotel guests.
+</p>
+
+</article>
+
+<article class="question">
+
+<h3>✈ Can I request airport transportation?</h3>
+
+<p>
+Yes. Airport pickup and drop-off can be selected during booking.
+</p>
+
+</article>
+
+<article class="question">
+
+<h3>❌ Can I cancel my reservation?</h3>
+
+<p>
+Yes. Reservations can be cancelled according to our cancellation policy.
+</p>
+
+</article>
+
+</section>
+
+<section class="contact-help">
+
+<h2>Contact ENHA HOTEL</h2>
+
+<p><strong>Phone:</strong> +252 61 123 4567</p>
+
+<p><strong>Email:</strong> info@enhahotel.com</p>
+
+<p><strong>Address:</strong> Mogadishu, Somalia</p>
+
+<h3>Follow Us</h3>
+
+<div class="social-links">
+
+<a href="aishajimale471@gmail.com" target="_blank">
+
+<i class="fa-brands fa-google"></i>
+</a>
+
+<a href="https://www.instagram.com/maariyo2004?igsh=MXdnejk4NHZpM2pxcg==" target="_blank">
+<i class="fa-brands fa-square-instagram"></i>
+</a>
+
+<a href="https://www.facebook.com/share/193zegndRH/" target="_blank">
+<i class="fa-brands fa-square-facebook"></i>
+</a>
+
+<a href="https://www.tiktok.com/@acode61?_r=1&_t=ZS-97fOf0Iw5h3K" target="_blank">
+    <i class="fa-brands fa-tiktok"></i>
+</a>
+
+<a href="https://youtube.com/@itsaknife-i8r4s?si=GqK4SKFmkszPQXDwK" target="_blank">
+<i class="fa-brands fa-youtube"></i>
+</a>
+
+<a href="https://x.com/EnhaHotel" target="_blank">
+<i class="fa-brands fa-square-x-twitter"></i>
+</a>
+
+</div>
+
+<a href="booking.html" class="btn">
+
+Book Your Stay
+
+</a>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>
+
+&copy; 2026 ENHA HOTEL | Luxury • Comfort • Elegance
+
+</p>
+
+</footer>
+
+</body>
+
+</html>

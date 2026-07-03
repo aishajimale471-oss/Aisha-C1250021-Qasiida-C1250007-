@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ENHA HOTEL | About</title>
+
+<link rel="stylesheet" href="style.css">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<link rel="icon" href="images/logo.jpeg">
+
+<style>
+
+
+.about-hero{
+
+text-align:center;
+
+padding:80px 20px;
+
+}
+
+.about-hero h2{
+
+font-family:'Playfair Display',serif;
+
+font-size:48px;
+
+color:var(--gold);
+
+margin-bottom:15px;
+
+}
+
+.about-hero p{
+
+font-size:18px;
+
+line-height:1.8;
+
+}
+
+
+.story{
+
+width:90%;
+
+margin:60px auto;
+
+background:var(--dark);
+
+padding:30px;
+
+border:2px solid var(--gold);
+
+border-radius:15px;
+
+overflow:auto;
+
+}
+
+.story h2{
+
+color:var(--gold);
+
+margin-bottom:20px;
+
+font-family:'Playfair Display',serif;
+
+}
+
+.story p{
+
+line-height:2;
+
+text-align:justify;
+
+}
+
+
+
+.left-img{
+
+float:left;
+
+width:320px;
+
+margin-right:25px;
+
+margin-bottom:15px;
+
+border-radius:15px;
+
+border:2px solid var(--gold);
+
+}
+
+.right-img{
+
+float:right;
+
+width:320px;
+
+margin-left:25px;
+
+margin-bottom:15px;
+
+border-radius:15px;
+
+border:2px solid var(--gold);
+
+}
+
+
+
+.contact-section{
+
+width:90%;
+
+margin:70px auto;
+
+}
+
+.contact-box{
+
+background:#181818;
+
+padding:30px;
+
+border-left:6px solid var(--gold);
+
+border-radius:12px;
+
+}
+
+.contact-box h2{
+
+color:var(--gold);
+
+margin-bottom:15px;
+
+font-family:'Playfair Display',serif;
+
+}
+
+.contact-box p{
+
+margin:10px 0;
+
+line-height:1.8;
+
+}
+
+
+
+.location{
+
+width:90%;
+
+margin:70px auto;
+
+text-align:center;
+
+}
+
+.location h2{
+
+color:var(--gold);
+
+margin-bottom:20px;
+
+font-family:'Playfair Display',serif;
+
+}
+
+.location iframe{
+
+width:100%;
+
+height:400px;
+
+border:none;
+
+border-radius:15px;
+
+}
+
+
+
+@media(max-width:768px){
+
+.about-hero h2{
+
+font-size:36px;
+
+}
+
+.left-img,
+.right-img{
+
+float:none;
+
+display:block;
+
+width:100%;
+
+margin:0 auto 20px;
+
+}
+
+.story{
+
+padding:20px;
+
+}
+
+}
+
+
+.team{
+
+width:90%;
+
+margin:80px auto;
+
+text-align:center;
+
+}
+
+.team h2{
+
+color:var(--gold);
+
+font-family:'Playfair Display',serif;
+
+margin-bottom:40px;
+
+}
+
+.team-container{
+
+display:flex;
+
+gap:40px;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+}
+
+.member{
+
+background:var(--dark);
+
+border:2px solid var(--gold);
+
+border-radius:15px;
+
+padding:25px;
+
+width:350px;
+
+transition:.3s;
+
+}
+
+.member:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 0 20px rgba(252, 203, 43, 0.4);
+
+}
+
+.member img{
+
+width:180px;
+
+height:180px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+border:3px solid var(--gold);
+
+margin-bottom:20px;
+
+}
+
+.member h3{
+
+color:var(--gold);
+
+margin-bottom:8px;
+
+
+}
+
+.member h4{
+
+margin-bottom:15px;
+
+font-weight:500;
+
+}
+
+.member p{
+
+line-height:1.8;
+
+text-align:justify;
+
+}
+
+@media(max-width:768px){
+
+.team-container{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+}
+
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<nav class="navbar">
+
+<h1 class="logo">ENHA HOTEL</h1>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+<li><a href="rooms.html">Rooms</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="amenities.html">Amenities</a></li>
+<li><a href="dining.html">Dining</a></li>
+<li><a href="booking.html">Booking</a></li>
+<li><a href="about.html" class="active">About</a></li>
+<li><a href="help.html">Help</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<main>
+
+<section class="about-hero">
+
+<h2 class="h2">About ENHA HOTEL</h2>
+
+<p class="p">
+
+Luxury, comfort and unforgettable hospitality.
+
+</p>
+
+</section>
+
+<article class="story">
+<video src="vid/Ourhotel.mp4" controls  class="left-img"></video>
+
+
+<h2>Our Story</h2>
+
+<p>
+
+ENHA HOTEL is a luxury destination designed for travelers seeking elegance, relaxation and exceptional hospitality. Every room, hallway and facility has been carefully planned to provide a comfortable and memorable experience. Guests enjoy beautifully designed rooms, premium dining, modern facilities and outstanding customer service. Whether visiting for business, family vacations or special occasions, ENHA HOTEL creates a welcoming atmosphere where every guest feels valued from the moment they arrive until their departure.
+
+</p>
+
+</article>
+
+<article class="story">
+
+<img src="images/luxuryroom.jpg" alt="Luxury Room" class="right-img">
+
+<h2>Our Mission & Vision</h2>
+
+<p>
+
+Our mission is to provide world-class accommodation while delivering excellent customer service that exceeds expectations. We believe luxury is created through attention to detail, professionalism and genuine hospitality. Our vision is to become one of the leading luxury hotels by continuously improving our services, embracing innovation and ensuring every guest enjoys an unforgettable stay with comfort, safety and elegance.
+
+</p>
+
+</article>
+
+<section class="contact-section">
+
+<div class="contact-box">
+
+<h2>Contact Us</h2>
+
+<p><strong>Phone:</strong> +252 61 123 4567</p>
+
+<p><strong>Email:</strong> info@enhahotel.com</p>
+
+<p><strong>Address:</strong> Mogadishu, Somalia</p>
+
+</div>
+
+</section>
+
+<section class="location">
+
+
+    <section class="team">
+
+<h2>Meet Our Team</h2>
+
+<div class="team-container">
+
+<div class="member">
+
+<img src="images/Aisha.png" alt="Aisha Mohamud Ahmed">
+
+<h3>Aisha Mohamud Ahmed
+<br>
+ID : CA1250021
+</h3>
+
+<h4>Team Leader & Front-End Developer</h4>
+
+<p>
+
+Aisha led the development of the ENHA HOTEL website by organizing the project, 
+designing the website layout, creating the navigation, and building several pages using HTML and CSS. 
+She also coordinated the teamwork to ensure every section matched the luxury theme of the hotel.
+
+</p>
+
+</div>
+
+<div class="member">
+
+<img src="images/Qasiida.png" alt="Qasiida Nuur Maxamuud">
+
+<h3>Qasiida Nuur Maxamuud <br> ID : CA1250007</h3>
+
+
+<h4>Team Member & Front-End Developer</h4>
+
+<p>
+
+Qasiida contributed to the project by helping develop different sections of the website,
+ preparing content, selecting suitable images, reviewing the design, and testing the pages.
+  She worked closely with the team leader to ensure the website was well organized and visually appealing.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<h2>Our Location</h2>
+
+<iframe
+src="https://www.google.com/maps?q=Mogadishu&output=embed"
+loading="lazy"
+allowfullscreen>
+
+</iframe>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>
+
+&copy;2026 ENHA HOTEL | Luxury • Comfort • Elegance
+
+</p>
+
+</footer>
+
+</body>
+
+</html>
